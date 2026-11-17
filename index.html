@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="口袋教練：點肌肉圖選部位、產生附示意圖的課表、器材被占用時換動作，並依每組感覺建議下次重量。">
+<title>口袋教練 Pocket Coach</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Noto+Sans+TC:wght@400;500;700;900&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <header class="top"><div class="brand">口袋<span>教練</span><small>Pocket Coach</small></div><div class="tag">今天練什麼、器材被占用換什麼、下次加多少</div></header>
+  <main id="view"></main>
+  <p class="foot">原型：動作提示、起始重量與示意圖都是一般原則，有傷病請先諮詢專業人員。紀錄只存在這台裝置的瀏覽器裡。台大健身中心人數為收集程式在 11/16 的實際資料，正式版會每 10 分鐘更新。</p>
+</div>
+<div id="restbar" hidden><div class="rest-in" role="timer" aria-live="off"><div><small>組間休息</small><span class="big num" id="restTime">1:30</span></div><button class="btn sm" type="button" data-act="rest-add">＋30 秒</button><button class="btn sm" type="button" data-act="rest-skip">跳過</button><div class="bar" id="restBar"></div></div></div>
+<nav class="tabs" id="tabs" aria-label="分頁"><div class="tabs-in">
+  <button type="button" data-act="tab" data-tab="today" id="tab-today">今天</button>
+  <button type="button" data-act="tab" data-tab="log" id="tab-log">紀錄</button>
+  <button type="button" data-act="tab" data-tab="me" id="tab-me">我的</button>
+</div></nav>
+<div id="sheet" hidden><div class="sheet-in" id="sheetIn" role="dialog" aria-modal="true" aria-label="換動作"></div></div>
+<div id="toast" hidden role="status"></div>
+<script src="app.js"></script>
+</body>
+</html>
