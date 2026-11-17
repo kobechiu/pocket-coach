@@ -8,6 +8,12 @@
 
 GitHub Pages 開啟後的網址：`https://kobechiu.github.io/pocket-coach/`
 
+## 文件
+
+- 期末專案企劃書（11/24 繳交）：[內容](docs/proposal.md)｜[Word 檔](docs/proposal.docx)｜[PDF](docs/proposal.pdf)
+
+修改企劃書時，`proposal.md` 是原稿；改完記得同步更新 Word 檔與 PDF。
+
 ## 在自己電腦上跑
 
 不需要安裝任何套件，只要有 Python（macOS 內建）：
